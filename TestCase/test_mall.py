@@ -45,4 +45,5 @@ class Test_mall():
         # 获取提示文本
         base.click("获取提示文本",'''//div[@aria-label="提示"]/following-sibling::div//p''')
         # 断言
+        assert "成功" in driver.page_source
 
