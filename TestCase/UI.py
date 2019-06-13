@@ -15,16 +15,14 @@ def input_demo(driver):
 
 
 def input_demo2(driver):
+    input_el = driver.find_element_by_xpath('/html/body/table/tbody/tr[2]/td[2]/input')
+    # 输入值
+    input_el.send_keys("祁美宏")
+    time.sleep(2)
+    # clear:清除
+    input_el.clear()
+    time.sleep(2)
 
-    file_el = driver.find_element_by_id('file1')
-    file_el.send_keys('C:/Users/Administrator/Desktop/py2.png')
-    time.sleep(2)
-    radio_els = driver.find_elements_by_name('radio')
-    print(type(radio_els))
-    radio_els[0].click()
-    time.sleep(1)
-    radio_els[1].click()
-    time.sleep(2)
 
 def check_box(driver):
     checkbox_els = driver.find_elements_by_class_name('checkbox')
