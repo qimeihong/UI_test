@@ -13,6 +13,8 @@ from Common import Consts
 import json
 
 
+
+
 class Assertion:
     def __init__(self):
         self.log = Log.MyLog()
